@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A409C0391E76E16A00E70CB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C0381E76E16A00E70CB5 /* AppDelegate.swift */; };
+		A409C03B1E76E16A00E70CB5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C03A1E76E16A00E70CB5 /* ViewController.swift */; };
+		A409C03E1E76E16A00E70CB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A409C03C1E76E16A00E70CB5 /* Main.storyboard */; };
+		A409C0401E76E16A00E70CB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A409C03F1E76E16A00E70CB5 /* Assets.xcassets */; };
+		A409C0431E76E16A00E70CB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A409C0411E76E16A00E70CB5 /* LaunchScreen.storyboard */; };
+		A409C04E1E76E16A00E70CB5 /* FroxiiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C04D1E76E16A00E70CB5 /* FroxiiTests.swift */; };
+		A409C0591E76E16A00E70CB5 /* FroxiiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C0581E76E16A00E70CB5 /* FroxiiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A409C04A1E76E16A00E70CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A409C02D1E76E16A00E70CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A409C0341E76E16A00E70CB5;
+			remoteInfo = Froxii;
+		};
+		A409C0551E76E16A00E70CB5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A409C02D1E76E16A00E70CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A409C0341E76E16A00E70CB5;
+			remoteInfo = Froxii;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A409C0351E76E16A00E70CB5 /* Froxii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Froxii.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A409C0381E76E16A00E70CB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A409C03A1E76E16A00E70CB5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A409C03D1E76E16A00E70CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A409C03F1E76E16A00E70CB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A409C0421E76E16A00E70CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A409C0441E76E16A00E70CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A409C0491E76E16A00E70CB5 /* FroxiiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FroxiiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A409C04D1E76E16A00E70CB5 /* FroxiiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FroxiiTests.swift; sourceTree = "<group>"; };
+		A409C04F1E76E16A00E70CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A409C0541E76E16A00E70CB5 /* FroxiiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FroxiiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A409C0581E76E16A00E70CB5 /* FroxiiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FroxiiUITests.swift; sourceTree = "<group>"; };
+		A409C05A1E76E16A00E70CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A409C0321E76E16A00E70CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A409C0461E76E16A00E70CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A409C0511E76E16A00E70CB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A409C02C1E76E16A00E70CB5 = {
+			isa = PBXGroup;
+			children = (
+				A409C0371E76E16A00E70CB5 /* Froxii */,
+				A409C04C1E76E16A00E70CB5 /* FroxiiTests */,
+				A409C0571E76E16A00E70CB5 /* FroxiiUITests */,
+				A409C0361E76E16A00E70CB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A409C0361E76E16A00E70CB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A409C0351E76E16A00E70CB5 /* Froxii.app */,
+				A409C0491E76E16A00E70CB5 /* FroxiiTests.xctest */,
+				A409C0541E76E16A00E70CB5 /* FroxiiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A409C0371E76E16A00E70CB5 /* Froxii */ = {
+			isa = PBXGroup;
+			children = (
+				A409C0381E76E16A00E70CB5 /* AppDelegate.swift */,
+				A409C03A1E76E16A00E70CB5 /* ViewController.swift */,
+				A409C03C1E76E16A00E70CB5 /* Main.storyboard */,
+				A409C03F1E76E16A00E70CB5 /* Assets.xcassets */,
+				A409C0411E76E16A00E70CB5 /* LaunchScreen.storyboard */,
+				A409C0441E76E16A00E70CB5 /* Info.plist */,
+			);
+			path = Froxii;
+			sourceTree = "<group>";
+		};
+		A409C04C1E76E16A00E70CB5 /* FroxiiTests */ = {
+			isa = PBXGroup;
+			children = (
+				A409C04D1E76E16A00E70CB5 /* FroxiiTests.swift */,
+				A409C04F1E76E16A00E70CB5 /* Info.plist */,
+			);
+			path = FroxiiTests;
+			sourceTree = "<group>";
+		};
+		A409C0571E76E16A00E70CB5 /* FroxiiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A409C0581E76E16A00E70CB5 /* FroxiiUITests.swift */,
+				A409C05A1E76E16A00E70CB5 /* Info.plist */,
+			);
+			path = FroxiiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A409C0341E76E16A00E70CB5 /* Froxii */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A409C05D1E76E16A00E70CB5 /* Build configuration list for PBXNativeTarget "Froxii" */;
+			buildPhases = (
+				A409C0311E76E16A00E70CB5 /* Sources */,
+				A409C0321E76E16A00E70CB5 /* Frameworks */,
+				A409C0331E76E16A00E70CB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Froxii;
+			productName = Froxii;
+			productReference = A409C0351E76E16A00E70CB5 /* Froxii.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A409C0481E76E16A00E70CB5 /* FroxiiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A409C0601E76E16A00E70CB5 /* Build configuration list for PBXNativeTarget "FroxiiTests" */;
+			buildPhases = (
+				A409C0451E76E16A00E70CB5 /* Sources */,
+				A409C0461E76E16A00E70CB5 /* Frameworks */,
+				A409C0471E76E16A00E70CB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A409C04B1E76E16A00E70CB5 /* PBXTargetDependency */,
+			);
+			name = FroxiiTests;
+			productName = FroxiiTests;
+			productReference = A409C0491E76E16A00E70CB5 /* FroxiiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A409C0531E76E16A00E70CB5 /* FroxiiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A409C0631E76E16A00E70CB5 /* Build configuration list for PBXNativeTarget "FroxiiUITests" */;
+			buildPhases = (
+				A409C0501E76E16A00E70CB5 /* Sources */,
+				A409C0511E76E16A00E70CB5 /* Frameworks */,
+				A409C0521E76E16A00E70CB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A409C0561E76E16A00E70CB5 /* PBXTargetDependency */,
+			);
+			name = FroxiiUITests;
+			productName = FroxiiUITests;
+			productReference = A409C0541E76E16A00E70CB5 /* FroxiiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A409C02D1E76E16A00E70CB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Aynur Galiev";
+				TargetAttributes = {
+					A409C0341E76E16A00E70CB5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					A409C0481E76E16A00E70CB5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A409C0341E76E16A00E70CB5;
+					};
+					A409C0531E76E16A00E70CB5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A409C0341E76E16A00E70CB5;
+					};
+				};
+			};
+			buildConfigurationList = A409C0301E76E16A00E70CB5 /* Build configuration list for PBXProject "Froxii" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A409C02C1E76E16A00E70CB5;
+			productRefGroup = A409C0361E76E16A00E70CB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A409C0341E76E16A00E70CB5 /* Froxii */,
+				A409C0481E76E16A00E70CB5 /* FroxiiTests */,
+				A409C0531E76E16A00E70CB5 /* FroxiiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A409C0331E76E16A00E70CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A409C0431E76E16A00E70CB5 /* LaunchScreen.storyboard in Resources */,
+				A409C0401E76E16A00E70CB5 /* Assets.xcassets in Resources */,
+				A409C03E1E76E16A00E70CB5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A409C0471E76E16A00E70CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A409C0521E76E16A00E70CB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A409C0311E76E16A00E70CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A409C03B1E76E16A00E70CB5 /* ViewController.swift in Sources */,
+				A409C0391E76E16A00E70CB5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A409C0451E76E16A00E70CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A409C04E1E76E16A00E70CB5 /* FroxiiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A409C0501E76E16A00E70CB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A409C0591E76E16A00E70CB5 /* FroxiiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A409C04B1E76E16A00E70CB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A409C0341E76E16A00E70CB5 /* Froxii */;
+			targetProxy = A409C04A1E76E16A00E70CB5 /* PBXContainerItemProxy */;
+		};
+		A409C0561E76E16A00E70CB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A409C0341E76E16A00E70CB5 /* Froxii */;
+			targetProxy = A409C0551E76E16A00E70CB5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A409C03C1E76E16A00E70CB5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A409C03D1E76E16A00E70CB5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A409C0411E76E16A00E70CB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A409C0421E76E16A00E70CB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A409C05B1E76E16A00E70CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A409C05C1E76E16A00E70CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A409C05E1E76E16A00E70CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Froxii/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fs.Froxii;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A409C05F1E76E16A00E70CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Froxii/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fs.Froxii;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		A409C0611E76E16A00E70CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FroxiiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fs.FroxiiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Froxii.app/Froxii";
+			};
+			name = Debug;
+		};
+		A409C0621E76E16A00E70CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = FroxiiTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fs.FroxiiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Froxii.app/Froxii";
+			};
+			name = Release;
+		};
+		A409C0641E76E16A00E70CB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FroxiiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fs.FroxiiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Froxii;
+			};
+			name = Debug;
+		};
+		A409C0651E76E16A00E70CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = FroxiiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = fs.FroxiiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Froxii;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A409C0301E76E16A00E70CB5 /* Build configuration list for PBXProject "Froxii" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A409C05B1E76E16A00E70CB5 /* Debug */,
+				A409C05C1E76E16A00E70CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A409C05D1E76E16A00E70CB5 /* Build configuration list for PBXNativeTarget "Froxii" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A409C05E1E76E16A00E70CB5 /* Debug */,
+				A409C05F1E76E16A00E70CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A409C0601E76E16A00E70CB5 /* Build configuration list for PBXNativeTarget "FroxiiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A409C0611E76E16A00E70CB5 /* Debug */,
+				A409C0621E76E16A00E70CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A409C0631E76E16A00E70CB5 /* Build configuration list for PBXNativeTarget "FroxiiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A409C0641E76E16A00E70CB5 /* Debug */,
+				A409C0651E76E16A00E70CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A409C02D1E76E16A00E70CB5 /* Project object */;
+}
