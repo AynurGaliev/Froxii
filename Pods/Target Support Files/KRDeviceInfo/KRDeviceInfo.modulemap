@@ -1,0 +1,6 @@
+framework module KRDeviceInfo {
+  umbrella header "KRDeviceInfo-umbrella.h"
+
+  export *
+  module * { export * }
+}

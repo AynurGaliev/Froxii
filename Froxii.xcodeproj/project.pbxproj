@@ -7,8 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33F2D5D333DBD8A83E89D75F /* Pods_Abstract_Froxii.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69B168B7912AE83BF6318518 /* Pods_Abstract_Froxii.framework */; };
+		6E2C52F69FA4DC2FF1505A4F /* Pods_Abstract_FroxiiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 036D6F2125AD0F01C8D816A1 /* Pods_Abstract_FroxiiUITests.framework */; };
+		9DCA1819B215A01741DF0D29 /* Pods_Abstract_FroxiiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1964474572B3A80626806C6 /* Pods_Abstract_FroxiiTests.framework */; };
 		A409C0391E76E16A00E70CB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C0381E76E16A00E70CB5 /* AppDelegate.swift */; };
-		A409C03B1E76E16A00E70CB5 /* MainMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C03A1E76E16A00E70CB5 /* MainMapViewController.swift */; };
+		A409C03B1E76E16A00E70CB5 /* FRMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C03A1E76E16A00E70CB5 /* FRMapViewController.swift */; };
 		A409C03E1E76E16A00E70CB5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A409C03C1E76E16A00E70CB5 /* Main.storyboard */; };
 		A409C0401E76E16A00E70CB5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A409C03F1E76E16A00E70CB5 /* Assets.xcassets */; };
 		A409C0431E76E16A00E70CB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A409C0411E76E16A00E70CB5 /* LaunchScreen.storyboard */; };
@@ -16,6 +19,14 @@
 		A409C0591E76E16A00E70CB5 /* FroxiiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C0581E76E16A00E70CB5 /* FroxiiUITests.swift */; };
 		A409C0691E76E3F500E70CB5 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C0681E76E3F500E70CB5 /* Friend.swift */; };
 		A409C06B1E76EB7B00E70CB5 /* FriendAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C06A1E76EB7B00E70CB5 /* FriendAnnotation.swift */; };
+		A4822EC21E782B7800103442 /* FriendAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822EC11E782B7800103442 /* FriendAnnotationView.swift */; };
+		A4822EC51E782FF200103442 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822EC41E782FF200103442 /* Extensions.swift */; };
+		A4822EC71E783AC700103442 /* FRMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822EC61E783AC700103442 /* FRMainViewController.swift */; };
+		A4822ECA1E783F1D00103442 /* FRFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822EC91E783F1D00103442 /* FRFriendsViewController.swift */; };
+		A4822ECC1E78402900103442 /* FRContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822ECB1E78402900103442 /* FRContainerViewController.swift */; };
+		A4822ECF1E784AF000103442 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822ECE1E784AF000103442 /* FriendCell.swift */; };
+		A4822ED11E78510200103442 /* jobs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4822ED01E78510200103442 /* jobs.jpg */; };
+		A4822ED41E78585A00103442 /* FriendSearchSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822ED31E78585A00103442 /* FriendSearchSegmentedControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +47,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036D6F2125AD0F01C8D816A1 /* Pods_Abstract_FroxiiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Abstract_FroxiiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B545422EAD9E90A2BFE6EF8 /* Pods-Abstract-Froxii.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abstract-Froxii.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Abstract-Froxii/Pods-Abstract-Froxii.debug.xcconfig"; sourceTree = "<group>"; };
+		69B168B7912AE83BF6318518 /* Pods_Abstract_Froxii.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Abstract_Froxii.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7D0D19305AC55DA7CC029115 /* Pods-Abstract-FroxiiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abstract-FroxiiTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Abstract-FroxiiTests/Pods-Abstract-FroxiiTests.release.xcconfig"; sourceTree = "<group>"; };
+		893F23590D4006057C21DC37 /* Pods-Abstract-FroxiiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abstract-FroxiiTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Abstract-FroxiiTests/Pods-Abstract-FroxiiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F5DB9208F37AE8745E7C4A3 /* Pods-Abstract-Froxii.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abstract-Froxii.release.xcconfig"; path = "Pods/Target Support Files/Pods-Abstract-Froxii/Pods-Abstract-Froxii.release.xcconfig"; sourceTree = "<group>"; };
+		99C66E8115D36BB49F1B9CE8 /* Pods-Abstract-FroxiiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abstract-FroxiiUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Abstract-FroxiiUITests/Pods-Abstract-FroxiiUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A409C0351E76E16A00E70CB5 /* Froxii.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Froxii.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A409C0381E76E16A00E70CB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A409C03A1E76E16A00E70CB5 /* MainMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMapViewController.swift; sourceTree = "<group>"; };
+		A409C03A1E76E16A00E70CB5 /* FRMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FRMapViewController.swift; sourceTree = "<group>"; };
 		A409C03D1E76E16A00E70CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A409C03F1E76E16A00E70CB5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A409C0421E76E16A00E70CB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +69,16 @@
 		A409C05A1E76E16A00E70CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A409C0681E76E3F500E70CB5 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		A409C06A1E76EB7B00E70CB5 /* FriendAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendAnnotation.swift; sourceTree = "<group>"; };
+		A4822EC11E782B7800103442 /* FriendAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendAnnotationView.swift; sourceTree = "<group>"; };
+		A4822EC41E782FF200103442 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		A4822EC61E783AC700103442 /* FRMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRMainViewController.swift; sourceTree = "<group>"; };
+		A4822EC91E783F1D00103442 /* FRFriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRFriendsViewController.swift; sourceTree = "<group>"; };
+		A4822ECB1E78402900103442 /* FRContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRContainerViewController.swift; sourceTree = "<group>"; };
+		A4822ECE1E784AF000103442 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
+		A4822ED01E78510200103442 /* jobs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jobs.jpg; sourceTree = "<group>"; };
+		A4822ED31E78585A00103442 /* FriendSearchSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchSegmentedControl.swift; sourceTree = "<group>"; };
+		A85BE16BB80298717C2A3125 /* Pods-Abstract-FroxiiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abstract-FroxiiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Abstract-FroxiiUITests/Pods-Abstract-FroxiiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E1964474572B3A80626806C6 /* Pods_Abstract_FroxiiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Abstract_FroxiiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33F2D5D333DBD8A83E89D75F /* Pods_Abstract_Froxii.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DCA1819B215A01741DF0D29 /* Pods_Abstract_FroxiiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +102,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E2C52F69FA4DC2FF1505A4F /* Pods_Abstract_FroxiiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08719AACC53A37CE2E7EC42C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B545422EAD9E90A2BFE6EF8 /* Pods-Abstract-Froxii.debug.xcconfig */,
+				8F5DB9208F37AE8745E7C4A3 /* Pods-Abstract-Froxii.release.xcconfig */,
+				893F23590D4006057C21DC37 /* Pods-Abstract-FroxiiTests.debug.xcconfig */,
+				7D0D19305AC55DA7CC029115 /* Pods-Abstract-FroxiiTests.release.xcconfig */,
+				99C66E8115D36BB49F1B9CE8 /* Pods-Abstract-FroxiiUITests.debug.xcconfig */,
+				A85BE16BB80298717C2A3125 /* Pods-Abstract-FroxiiUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		A409C02C1E76E16A00E70CB5 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +129,8 @@
 				A409C04C1E76E16A00E70CB5 /* FroxiiTests */,
 				A409C0571E76E16A00E70CB5 /* FroxiiUITests */,
 				A409C0361E76E16A00E70CB5 /* Products */,
+				08719AACC53A37CE2E7EC42C /* Pods */,
+				DACB6DFA0CD2BC22BB80E482 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +147,12 @@
 		A409C0371E76E16A00E70CB5 /* Froxii */ = {
 			isa = PBXGroup;
 			children = (
+				A4822ED01E78510200103442 /* jobs.jpg */,
+				A4822EC81E783EFD00103442 /* Controllers */,
+				A4822EC31E782FE600103442 /* Helpers */,
 				A409C0671E76E3E700E70CB5 /* Models */,
 				A409C0661E76E27400E70CB5 /* Views */,
 				A409C0381E76E16A00E70CB5 /* AppDelegate.swift */,
-				A409C03A1E76E16A00E70CB5 /* MainMapViewController.swift */,
 				A409C03C1E76E16A00E70CB5 /* Main.storyboard */,
 				A409C03F1E76E16A00E70CB5 /* Assets.xcassets */,
 				A409C0411E76E16A00E70CB5 /* LaunchScreen.storyboard */,
@@ -135,6 +183,9 @@
 		A409C0661E76E27400E70CB5 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A4822ED21E78583600103442 /* Map view */,
+				A4822ECD1E784AD500103442 /* Collection view cells */,
+				A4822ED31E78585A00103442 /* FriendSearchSegmentedControl.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -147,6 +198,51 @@
 			name = Models;
 			sourceTree = "<group>";
 		};
+		A4822EC31E782FE600103442 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				A4822EC41E782FF200103442 /* Extensions.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		A4822EC81E783EFD00103442 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A4822EC61E783AC700103442 /* FRMainViewController.swift */,
+				A409C03A1E76E16A00E70CB5 /* FRMapViewController.swift */,
+				A4822EC91E783F1D00103442 /* FRFriendsViewController.swift */,
+				A4822ECB1E78402900103442 /* FRContainerViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		A4822ECD1E784AD500103442 /* Collection view cells */ = {
+			isa = PBXGroup;
+			children = (
+				A4822ECE1E784AF000103442 /* FriendCell.swift */,
+			);
+			name = "Collection view cells";
+			sourceTree = "<group>";
+		};
+		A4822ED21E78583600103442 /* Map view */ = {
+			isa = PBXGroup;
+			children = (
+				A4822EC11E782B7800103442 /* FriendAnnotationView.swift */,
+			);
+			name = "Map view";
+			sourceTree = "<group>";
+		};
+		DACB6DFA0CD2BC22BB80E482 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				69B168B7912AE83BF6318518 /* Pods_Abstract_Froxii.framework */,
+				E1964474572B3A80626806C6 /* Pods_Abstract_FroxiiTests.framework */,
+				036D6F2125AD0F01C8D816A1 /* Pods_Abstract_FroxiiUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -154,9 +250,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A409C05D1E76E16A00E70CB5 /* Build configuration list for PBXNativeTarget "Froxii" */;
 			buildPhases = (
+				90EB1A4F03B36825951A8451 /* [CP] Check Pods Manifest.lock */,
 				A409C0311E76E16A00E70CB5 /* Sources */,
 				A409C0321E76E16A00E70CB5 /* Frameworks */,
 				A409C0331E76E16A00E70CB5 /* Resources */,
+				7881B8ABB4CCE0DC63932753 /* [CP] Embed Pods Frameworks */,
+				A296E220B8F666F5B26866C8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -171,9 +270,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A409C0601E76E16A00E70CB5 /* Build configuration list for PBXNativeTarget "FroxiiTests" */;
 			buildPhases = (
+				7B226953E382A53A107DC6B6 /* [CP] Check Pods Manifest.lock */,
 				A409C0451E76E16A00E70CB5 /* Sources */,
 				A409C0461E76E16A00E70CB5 /* Frameworks */,
 				A409C0471E76E16A00E70CB5 /* Resources */,
+				3424BCBD7236C8045B63C5E3 /* [CP] Embed Pods Frameworks */,
+				A9B166FE24D8D1FBC1AA8588 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,9 +291,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A409C0631E76E16A00E70CB5 /* Build configuration list for PBXNativeTarget "FroxiiUITests" */;
 			buildPhases = (
+				16098992C732ED20CD296F10 /* [CP] Check Pods Manifest.lock */,
 				A409C0501E76E16A00E70CB5 /* Sources */,
 				A409C0511E76E16A00E70CB5 /* Frameworks */,
 				A409C0521E76E16A00E70CB5 /* Resources */,
+				ED0BD23479CB1F0D066A66E5 /* [CP] Embed Pods Frameworks */,
+				88645608974CDA3A6F23F9E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -255,6 +360,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4822ED11E78510200103442 /* jobs.jpg in Resources */,
 				A409C0431E76E16A00E70CB5 /* LaunchScreen.storyboard in Resources */,
 				A409C0401E76E16A00E70CB5 /* Assets.xcassets in Resources */,
 				A409C03E1E76E16A00E70CB5 /* Main.storyboard in Resources */,
@@ -277,15 +383,160 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16098992C732ED20CD296F10 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3424BCBD7236C8045B63C5E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Abstract-FroxiiTests/Pods-Abstract-FroxiiTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7881B8ABB4CCE0DC63932753 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Abstract-Froxii/Pods-Abstract-Froxii-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7B226953E382A53A107DC6B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		88645608974CDA3A6F23F9E3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Abstract-FroxiiUITests/Pods-Abstract-FroxiiUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90EB1A4F03B36825951A8451 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A296E220B8F666F5B26866C8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Abstract-Froxii/Pods-Abstract-Froxii-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9B166FE24D8D1FBC1AA8588 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Abstract-FroxiiTests/Pods-Abstract-FroxiiTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED0BD23479CB1F0D066A66E5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Abstract-FroxiiUITests/Pods-Abstract-FroxiiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A409C0311E76E16A00E70CB5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4822ECA1E783F1D00103442 /* FRFriendsViewController.swift in Sources */,
+				A4822ECC1E78402900103442 /* FRContainerViewController.swift in Sources */,
 				A409C06B1E76EB7B00E70CB5 /* FriendAnnotation.swift in Sources */,
-				A409C03B1E76E16A00E70CB5 /* MainMapViewController.swift in Sources */,
+				A4822EC51E782FF200103442 /* Extensions.swift in Sources */,
+				A409C03B1E76E16A00E70CB5 /* FRMapViewController.swift in Sources */,
+				A4822EC71E783AC700103442 /* FRMainViewController.swift in Sources */,
+				A4822EC21E782B7800103442 /* FriendAnnotationView.swift in Sources */,
 				A409C0691E76E3F500E70CB5 /* Friend.swift in Sources */,
+				A4822ED41E78585A00103442 /* FriendSearchSegmentedControl.swift in Sources */,
 				A409C0391E76E16A00E70CB5 /* AppDelegate.swift in Sources */,
+				A4822ECF1E784AF000103442 /* FriendCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +686,7 @@
 		};
 		A409C05E1E76E16A00E70CB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B545422EAD9E90A2BFE6EF8 /* Pods-Abstract-Froxii.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -450,6 +702,7 @@
 		};
 		A409C05F1E76E16A00E70CB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F5DB9208F37AE8745E7C4A3 /* Pods-Abstract-Froxii.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -465,6 +718,7 @@
 		};
 		A409C0611E76E16A00E70CB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 893F23590D4006057C21DC37 /* Pods-Abstract-FroxiiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -479,6 +733,7 @@
 		};
 		A409C0621E76E16A00E70CB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D0D19305AC55DA7CC029115 /* Pods-Abstract-FroxiiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +748,7 @@
 		};
 		A409C0641E76E16A00E70CB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C66E8115D36BB49F1B9CE8 /* Pods-Abstract-FroxiiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FroxiiUITests/Info.plist;
@@ -506,6 +762,7 @@
 		};
 		A409C0651E76E16A00E70CB5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A85BE16BB80298717C2A3125 /* Pods-Abstract-FroxiiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = FroxiiUITests/Info.plist;
@@ -536,6 +793,7 @@
 				A409C05F1E76E16A00E70CB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A409C0601E76E16A00E70CB5 /* Build configuration list for PBXNativeTarget "FroxiiTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +802,7 @@
 				A409C0621E76E16A00E70CB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A409C0631E76E16A00E70CB5 /* Build configuration list for PBXNativeTarget "FroxiiUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +811,7 @@
 				A409C0651E76E16A00E70CB5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

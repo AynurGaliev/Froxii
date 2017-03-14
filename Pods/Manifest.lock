@@ -1,0 +1,31 @@
+PODS:
+  - FSHelpers+Swift (2.2)
+  - KRDeviceInfo (1.1)
+
+DEPENDENCIES:
+  - FSHelpers+Swift (from `https://github.com/fs/FSHelper.git`, branch `master`)
+  - KRDeviceInfo (from `https://github.com/NikolaevSergey/KRDeviceInfo.git`, branch `master`)
+
+EXTERNAL SOURCES:
+  FSHelpers+Swift:
+    :branch: master
+    :git: https://github.com/fs/FSHelper.git
+  KRDeviceInfo:
+    :branch: master
+    :git: https://github.com/NikolaevSergey/KRDeviceInfo.git
+
+CHECKOUT OPTIONS:
+  FSHelpers+Swift:
+    :commit: e020aef27bc3c633d158947421b0d967fb6b9a2a
+    :git: https://github.com/fs/FSHelper.git
+  KRDeviceInfo:
+    :commit: 6c34ad6fc8e0fecca743eff718c3e191ecc5a5ca
+    :git: https://github.com/NikolaevSergey/KRDeviceInfo.git
+
+SPEC CHECKSUMS:
+  FSHelpers+Swift: df9494a1d09ac433dcb3a88dcec6546a7a09c17b
+  KRDeviceInfo: b59890711e9d8d4768e33c66425ae413ef40bd05
+
+PODFILE CHECKSUM: 01335eea728fed33f2f4c0339a9ffd3700bb8d36
+
+COCOAPODS: 1.2.0

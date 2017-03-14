@@ -9,6 +9,23 @@
 import UIKit
 import MapKit
 
-class FriendAnnotation: MKAnnotation {
+final class FriendAnnotation: NSObject, MKAnnotation {
 
+    private(set) var friend: Friend!
+    
+    init(friend: Friend) {
+        self.friend = friend
+    }
+    
+    var coordinate: CLLocationCoordinate2D {
+        return self.friend?.location.coordinate ?? CLLocationCoordinate2D()
+    }
+    
+    var title: String? {
+        return self.friend?.name
+    }
+    
+    var subtitle: String? {
+        return self.friend?.surname
+    }
 }
