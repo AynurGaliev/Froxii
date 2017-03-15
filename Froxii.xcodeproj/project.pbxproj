@@ -19,6 +19,8 @@
 		A409C0591E76E16A00E70CB5 /* FroxiiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C0581E76E16A00E70CB5 /* FroxiiUITests.swift */; };
 		A409C0691E76E3F500E70CB5 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C0681E76E3F500E70CB5 /* Friend.swift */; };
 		A409C06B1E76EB7B00E70CB5 /* FriendAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C06A1E76EB7B00E70CB5 /* FriendAnnotation.swift */; };
+		A466AE901E79855D006E05A6 /* PopPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A466AE8F1E79855D006E05A6 /* PopPresentationController.swift */; };
+		A466AE921E798A37006E05A6 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A466AE911E798A37006E05A6 /* DismissAnimator.swift */; };
 		A4822EC21E782B7800103442 /* FriendAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822EC11E782B7800103442 /* FriendAnnotationView.swift */; };
 		A4822EC51E782FF200103442 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822EC41E782FF200103442 /* Extensions.swift */; };
 		A4822EC71E783AC700103442 /* FRMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822EC61E783AC700103442 /* FRMainViewController.swift */; };
@@ -27,6 +29,7 @@
 		A4822ECF1E784AF000103442 /* FriendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822ECE1E784AF000103442 /* FriendCell.swift */; };
 		A4822ED11E78510200103442 /* jobs.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A4822ED01E78510200103442 /* jobs.jpg */; };
 		A4822ED41E78585A00103442 /* FriendSearchSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822ED31E78585A00103442 /* FriendSearchSegmentedControl.swift */; };
+		A4839EAE1E79705A00BB41BC /* FRProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4839EAD1E79705A00BB41BC /* FRProfileViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,8 @@
 		A409C05A1E76E16A00E70CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A409C0681E76E3F500E70CB5 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		A409C06A1E76EB7B00E70CB5 /* FriendAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendAnnotation.swift; sourceTree = "<group>"; };
+		A466AE8F1E79855D006E05A6 /* PopPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopPresentationController.swift; sourceTree = "<group>"; };
+		A466AE911E798A37006E05A6 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 		A4822EC11E782B7800103442 /* FriendAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendAnnotationView.swift; sourceTree = "<group>"; };
 		A4822EC41E782FF200103442 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		A4822EC61E783AC700103442 /* FRMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRMainViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +82,7 @@
 		A4822ECE1E784AF000103442 /* FriendCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendCell.swift; sourceTree = "<group>"; };
 		A4822ED01E78510200103442 /* jobs.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jobs.jpg; sourceTree = "<group>"; };
 		A4822ED31E78585A00103442 /* FriendSearchSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendSearchSegmentedControl.swift; sourceTree = "<group>"; };
+		A4839EAD1E79705A00BB41BC /* FRProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRProfileViewController.swift; sourceTree = "<group>"; };
 		A85BE16BB80298717C2A3125 /* Pods-Abstract-FroxiiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abstract-FroxiiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Abstract-FroxiiUITests/Pods-Abstract-FroxiiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E1964474572B3A80626806C6 /* Pods_Abstract_FroxiiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Abstract_FroxiiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -186,6 +192,8 @@
 				A4822ED21E78583600103442 /* Map view */,
 				A4822ECD1E784AD500103442 /* Collection view cells */,
 				A4822ED31E78585A00103442 /* FriendSearchSegmentedControl.swift */,
+				A466AE8F1E79855D006E05A6 /* PopPresentationController.swift */,
+				A466AE911E798A37006E05A6 /* DismissAnimator.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -213,6 +221,7 @@
 				A409C03A1E76E16A00E70CB5 /* FRMapViewController.swift */,
 				A4822EC91E783F1D00103442 /* FRFriendsViewController.swift */,
 				A4822ECB1E78402900103442 /* FRContainerViewController.swift */,
+				A4839EAD1E79705A00BB41BC /* FRProfileViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -530,13 +539,16 @@
 				A4822ECC1E78402900103442 /* FRContainerViewController.swift in Sources */,
 				A409C06B1E76EB7B00E70CB5 /* FriendAnnotation.swift in Sources */,
 				A4822EC51E782FF200103442 /* Extensions.swift in Sources */,
+				A4839EAE1E79705A00BB41BC /* FRProfileViewController.swift in Sources */,
 				A409C03B1E76E16A00E70CB5 /* FRMapViewController.swift in Sources */,
 				A4822EC71E783AC700103442 /* FRMainViewController.swift in Sources */,
 				A4822EC21E782B7800103442 /* FriendAnnotationView.swift in Sources */,
+				A466AE901E79855D006E05A6 /* PopPresentationController.swift in Sources */,
 				A409C0691E76E3F500E70CB5 /* Friend.swift in Sources */,
 				A4822ED41E78585A00103442 /* FriendSearchSegmentedControl.swift in Sources */,
 				A409C0391E76E16A00E70CB5 /* AppDelegate.swift in Sources */,
 				A4822ECF1E784AF000103442 /* FriendCell.swift in Sources */,
+				A466AE921E798A37006E05A6 /* DismissAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

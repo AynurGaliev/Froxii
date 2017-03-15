@@ -16,10 +16,15 @@ enum FriendsSearchOption: Int {
 
 final class FRMainViewController: UIViewController {
 
+    struct Constants {
+        static let profileSegueIdentifier: String = "ShowProfile"
+    }
+    
     @IBOutlet weak var friendSearchSegmentControl: UISegmentedControl!
     private var currentSegment: Int = 0
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var infoTextField: UITextField!
+    
     
     private var containerViewController: FRContainerViewController {
         return self.childViewControllers.first as! FRContainerViewController
@@ -34,10 +39,21 @@ final class FRMainViewController: UIViewController {
         self.infoTextField.layer.borderWidth = 1
         self.containerViewController.setActiveSegment(to: FriendsSearchOption.Near.rawValue, from: self.currentSegment)
         self.currentSegment = FriendsSearchOption.Near.rawValue
+        
+        self.avatarImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(self.showProfile(sender:))))
+    }
+    
+    func showProfile(sender: Any?) {
+        let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FRProfileNavigationController")
+        self.present(controller, animated: true, completion: nil)
     }
     
     @IBAction func segmentChanged(_ sender: UISegmentedControl) {
         self.containerViewController.setActiveSegment(to: sender.selectedSegmentIndex, from: self.currentSegment)
         self.currentSegment = sender.selectedSegmentIndex
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .default
     }
 }

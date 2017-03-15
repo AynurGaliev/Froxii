@@ -34,3 +34,22 @@ extension MKMapView {
         }
     }
 }
+
+extension UIView {
+    
+    func makeRound(radius: CGFloat = -1) {
+        if radius == -1 {
+            self.layer.cornerRadius = floor(self.fs_width/2)
+        } else {
+            self.layer.cornerRadius = radius
+        }
+        self.clipsToBounds = true
+    }
+}
+
+extension CGRect {
+    
+    func offset(dx: CGFloat, dy: CGFloat) -> CGRect {
+        return CGRect(x: self.origin.x + dx, y: self.origin.y + dy, width: self.size.width, height: self.size.height)
+    }
+}

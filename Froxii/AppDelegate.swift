@@ -19,18 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-    
         self.setupAppearance()
-        
         return true
     }
     
     func setupAppearance() {
-        
         let navigationBar = UINavigationBar.appearance()
         navigationBar.backgroundColor = UIColor.white
-        navigationBar.backIndicatorImage = UIImage()
-
+        navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        navigationBar.shadowImage = UIImage()
+        navigationBar.isTranslucent = false
     }
 }
 

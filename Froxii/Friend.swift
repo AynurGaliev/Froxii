@@ -41,7 +41,7 @@ struct Friend {
         let surnames: [String] = ["Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor", "Anderson", "Thomas", "Jackson", "White", "Harris", "Martin", "Thompson", "Garcia", "Martinez", "Robinson"]
         
         var friends: [Friend] = []
-
+        
         for _ in 0..<count {
             let name    : String = names[self.getRandomInt(min: 0, max: names.count - 1)]
             let surname : String = surnames[self.getRandomInt(min: 0, max: surnames.count - 1)]
