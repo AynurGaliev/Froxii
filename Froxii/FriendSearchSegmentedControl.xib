@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11762"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FriendSearchSegmentedControl" customModule="Froxii" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="SmK-pX-Zc9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="87W-hl-nvO">
+                    <rect key="frame" x="10" y="6" width="106.5" height="48"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ag6-Qa-WIr">
+                    <rect key="frame" x="126.5" y="6" width="106.5" height="48"/>
+                    <color key="backgroundColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zRI-Mh-OYx">
+                    <rect key="frame" x="243" y="6" width="106" height="48"/>
+                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="87W-hl-nvO" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="6oc-7O-xtr"/>
+                <constraint firstItem="Ag6-Qa-WIr" firstAttribute="height" secondItem="87W-hl-nvO" secondAttribute="height" id="905-TT-KHo"/>
+                <constraint firstItem="Ag6-Qa-WIr" firstAttribute="centerY" secondItem="zRI-Mh-OYx" secondAttribute="centerY" id="JZp-kg-otX"/>
+                <constraint firstItem="Ag6-Qa-WIr" firstAttribute="width" secondItem="87W-hl-nvO" secondAttribute="width" id="MDK-7x-Ihr"/>
+                <constraint firstItem="87W-hl-nvO" firstAttribute="centerY" secondItem="Ag6-Qa-WIr" secondAttribute="centerY" id="NUB-kp-IdJ"/>
+                <constraint firstItem="Ag6-Qa-WIr" firstAttribute="leading" secondItem="87W-hl-nvO" secondAttribute="trailing" constant="10" id="Vnb-lP-2T4"/>
+                <constraint firstItem="87W-hl-nvO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="aRe-ux-Ytv"/>
+                <constraint firstItem="Ag6-Qa-WIr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="6" id="ax8-Y3-gIh"/>
+                <constraint firstItem="zRI-Mh-OYx" firstAttribute="leading" secondItem="Ag6-Qa-WIr" secondAttribute="trailing" constant="10" id="djg-fp-P4Y"/>
+                <constraint firstItem="zRI-Mh-OYx" firstAttribute="width" secondItem="Ag6-Qa-WIr" secondAttribute="width" id="f52-I3-YkJ"/>
+                <constraint firstItem="zRI-Mh-OYx" firstAttribute="height" secondItem="87W-hl-nvO" secondAttribute="height" id="fRL-EF-IUc"/>
+                <constraint firstAttribute="trailing" secondItem="zRI-Mh-OYx" secondAttribute="trailing" constant="10" id="kJB-N0-wU6"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-51.5" y="131"/>
+        </view>
+    </objects>
+</document>

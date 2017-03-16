@@ -22,6 +22,12 @@ class FRProfileViewController: UIViewController {
         self.view.addGestureRecognizer(gesture)
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.barStyle = .black
+        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0, green: 37.0/255, blue: 93.0/255, alpha: 1.0)
+    }
+    
     func dismissByPanning(sender: UIPanGestureRecognizer) {
         
         let point: CGPoint = sender.translation(in: self.view)
@@ -45,8 +51,10 @@ class FRProfileViewController: UIViewController {
             print("cancelled")
             let centerY: CGFloat = sender.view!.frame.midY
             if 200 < point.y {
+                print("cancelled - finish")
                 self.dismissAnimator.finish()
             } else {
+                print("cancelled - cancelled")
                 self.dismissAnimator.cancel()
             }
             
@@ -54,8 +62,10 @@ class FRProfileViewController: UIViewController {
             print("ended")
             let centerY: CGFloat = sender.view!.frame.midY
             if 200 < fabs(point.y) {
+                print("ended - finish")
                 self.dismissAnimator.finish()
             } else {
+                print("ended - cancel")
                 self.dismissAnimator.cancel()
             }
         default:
@@ -64,7 +74,7 @@ class FRProfileViewController: UIViewController {
     }
     
     @IBAction func backAction(_ sender: UIBarButtonItem) {
-        self.dismiss(animated: true, completion: nil)
+        self.navigationController!.dismiss(animated: true, completion: nil)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

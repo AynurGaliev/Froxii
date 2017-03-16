@@ -23,8 +23,8 @@ enum Gender: Int {
         }
     }
     
-    static let maleAnnotationImage   : UIImage = UIImage.from(color: UIColor.blue, size: CGSize(width: 4, height: 4)) //UIImage(named: "male_annotation")!
-    static let femaleAnnotationImage : UIImage = UIImage.from(color: UIColor.red, size: CGSize(width: 4, height: 4)) //UIImage(named: "female_annotation")!
+    static let maleAnnotationImage   : UIImage = UIImage(named: "location")!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+    static let femaleAnnotationImage : UIImage = UIImage(named: "location")!.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
 }
 
 struct Friend {

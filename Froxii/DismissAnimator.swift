@@ -11,7 +11,7 @@ import UIKit
 final class DismissAnimator: UIPercentDrivenInteractiveTransition {
 
     override var duration: CGFloat {
-        return 1
+        return 0.4
     }
 }
 
@@ -32,13 +32,9 @@ extension DismissAnimator: UIViewControllerAnimatedTransitioning {
         transitionContext.containerView.insertSubview(destinationVC.view, aboveSubview: sourceVC.view)
          
         UIView.animate(withDuration: TimeInterval(self.duration), animations: { () -> Void in
-            destinationVC.view.frame = transitionContext.containerView.frame.offset(dx: 0, dy: 20)
+            destinationVC.view.frame = UIScreen.main.bounds
             destinationVC.view.setNeedsLayout()
-            destinationVC.view.layoutIfNeeded()
         }) { (success: Bool) -> Void in
-            destinationVC.view.frame = transitionContext.containerView.frame
-            destinationVC.view.setNeedsLayout()
-            destinationVC.view.layoutIfNeeded()
             transitionContext.completeTransition(!transitionContext.transitionWasCancelled)
         }
     }

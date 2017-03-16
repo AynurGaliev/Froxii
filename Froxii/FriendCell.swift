@@ -14,6 +14,11 @@ var placeholderImage: UIImage = {
     return image
 }()
 
+var addFriendsImage: UIImage = {
+    let image = UIImage(named: "add_friend")!
+    return image
+}()
+
 final class FriendCell: UICollectionViewCell {
     
     @IBOutlet weak var avatarImageView: UIImageView!
@@ -43,7 +48,9 @@ final class FriendCell: UICollectionViewCell {
     func prepareCellAsAddFriend() {
         self.topBackgroundView.isHidden = true
         self.bottomBackgroundView.isHidden = true
-        self.avatarImageView.image = UIImage.from(color: UIColor.lightGray, size: self.avatarImageView.frame.size)
+        self.avatarImageView.image = addFriendsImage.withRenderingMode(UIImageRenderingMode.alwaysTemplate)
+        self.avatarImageView.tintColor = UIColor.white
+        self.backgroundColor = UIColor.lightGray
         self.layer.borderColor = UIColor.white.cgColor
     }
     
