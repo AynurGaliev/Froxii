@@ -24,8 +24,29 @@ class FRProfileViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.barStyle = .black
-        self.navigationController?.navigationBar.barTintColor = UIColor(red: 0, green: 37.0/255, blue: 93.0/255, alpha: 1.0)
+        self.configureNavigationBar()
+    }
+    
+    func configureNavigationBar() {
+        self.navigationController?.setNavigationBarHidden(true, animated: false)
+        let navBar = UINavigationBar(frame: CGRect(x: 0, y: 0, width: self.view.fs_width, height: 64))
+        navBar.barStyle = .black
+        navBar.barTintColor = UIColor(red: 0, green: 37.0/255, blue: 93.0/255, alpha: 1.0)
+        let navigationItem = UINavigationItem()
+        let leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "humburger_icon")?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), landscapeImagePhone: nil, style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.backAction(_:)))
+        leftBarButtonItem.tintColor = UIColor.white
+        let spacer = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.fixedSpace, target: nil, action: nil)
+        spacer.width = 15
+        navigationItem.leftBarButtonItems = [spacer, leftBarButtonItem]
+        
+        let rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "add")?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), landscapeImagePhone: nil, style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.showInvitation(sender:)))
+        rightBarButtonItem.tintColor = UIColor.white
+        navigationItem.rightBarButtonItems = [rightBarButtonItem, spacer]
+        
+        navBar.setItems([navigationItem], animated: false)
+        self.view.addSubview(navBar)
+        self.view.setNeedsLayout()
+        self.view.layoutIfNeeded()
     }
     
     func dismissByPanning(sender: UIPanGestureRecognizer) {
@@ -38,34 +59,24 @@ class FRProfileViewController: UIViewController {
         case UIGestureRecognizerState.began:
             
             guard location.y > self.view.fs_height - self.bottomHeightForPan else { return }
-            print("began")
             self.navigationController!.modalPresentationStyle = UIModalPresentationStyle.custom
             self.navigationController!.transitioningDelegate = self.dismissAnimator
             self.navigationController!.dismiss(animated: true, completion: nil)
             
         case UIGestureRecognizerState.changed:
-            //print("changed - \(fabs(point.y)/UIScreen.main.bounds.size.height)")
             self.dismissAnimator.update(fabs(point.y)/UIScreen.main.bounds.size.height)
             
         case UIGestureRecognizerState.cancelled:
-            print("cancelled")
-            let centerY: CGFloat = sender.view!.frame.midY
             if 200 < point.y {
-                print("cancelled - finish")
                 self.dismissAnimator.finish()
             } else {
-                print("cancelled - cancelled")
                 self.dismissAnimator.cancel()
             }
             
         case UIGestureRecognizerState.ended:
-            print("ended")
-            let centerY: CGFloat = sender.view!.frame.midY
             if 200 < fabs(point.y) {
-                print("ended - finish")
                 self.dismissAnimator.finish()
             } else {
-                print("ended - cancel")
                 self.dismissAnimator.cancel()
             }
         default:
@@ -74,7 +85,11 @@ class FRProfileViewController: UIViewController {
     }
     
     @IBAction func backAction(_ sender: UIBarButtonItem) {
-        self.navigationController!.dismiss(animated: true, completion: nil)
+        print("Not implemented")
+    }
+    
+    func showInvitation(sender: Any) {
+        self.performSegue(withIdentifier: "ShowInvititation", sender: self)
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

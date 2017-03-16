@@ -19,7 +19,6 @@
 		A409C0591E76E16A00E70CB5 /* FroxiiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C0581E76E16A00E70CB5 /* FroxiiUITests.swift */; };
 		A409C0691E76E3F500E70CB5 /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C0681E76E3F500E70CB5 /* Friend.swift */; };
 		A409C06B1E76EB7B00E70CB5 /* FriendAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A409C06A1E76EB7B00E70CB5 /* FriendAnnotation.swift */; };
-		A466AE901E79855D006E05A6 /* PopPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A466AE8F1E79855D006E05A6 /* PopPresentationController.swift */; };
 		A466AE921E798A37006E05A6 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A466AE911E798A37006E05A6 /* DismissAnimator.swift */; };
 		A4822EC21E782B7800103442 /* FriendAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822EC11E782B7800103442 /* FriendAnnotationView.swift */; };
 		A4822EC51E782FF200103442 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4822EC41E782FF200103442 /* Extensions.swift */; };
@@ -33,6 +32,9 @@
 		A48B8FD51E79E3B60049DB32 /* icon.tiff in Resources */ = {isa = PBXBuildFile; fileRef = A48B8FD41E79E3B60049DB32 /* icon.tiff */; };
 		A48B8FD71E79EF920049DB32 /* FriendSearchSegmentedControl.xib in Resources */ = {isa = PBXBuildFile; fileRef = A48B8FD61E79EF920049DB32 /* FriendSearchSegmentedControl.xib */; };
 		A48B8FD91E7A03CF0049DB32 /* FRInviteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48B8FD81E7A03CF0049DB32 /* FRInviteViewController.swift */; };
+		A497F2681E7A9A81008E5254 /* FRScrollbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497F2671E7A9A81008E5254 /* FRScrollbar.swift */; };
+		A497F26B1E7A9E0D008E5254 /* InviteActionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A497F26A1E7A9E0D008E5254 /* InviteActionsView.swift */; };
+		A497F26D1E7A9E1C008E5254 /* InviteActionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A497F26C1E7A9E1C008E5254 /* InviteActionsView.xib */; };
 		A4FB6A071E79DC9200164A9E /* FriendAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4FB6A061E79DC9200164A9E /* FriendAnnotationView.xib */; };
 /* End PBXBuildFile section */
 
@@ -76,7 +78,6 @@
 		A409C05A1E76E16A00E70CB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A409C0681E76E3F500E70CB5 /* Friend.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
 		A409C06A1E76EB7B00E70CB5 /* FriendAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendAnnotation.swift; sourceTree = "<group>"; };
-		A466AE8F1E79855D006E05A6 /* PopPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopPresentationController.swift; sourceTree = "<group>"; };
 		A466AE911E798A37006E05A6 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 		A4822EC11E782B7800103442 /* FriendAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendAnnotationView.swift; sourceTree = "<group>"; };
 		A4822EC41E782FF200103442 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -90,6 +91,9 @@
 		A48B8FD41E79E3B60049DB32 /* icon.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = icon.tiff; sourceTree = "<group>"; };
 		A48B8FD61E79EF920049DB32 /* FriendSearchSegmentedControl.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendSearchSegmentedControl.xib; sourceTree = "<group>"; };
 		A48B8FD81E7A03CF0049DB32 /* FRInviteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRInviteViewController.swift; sourceTree = "<group>"; };
+		A497F2671E7A9A81008E5254 /* FRScrollbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FRScrollbar.swift; sourceTree = "<group>"; };
+		A497F26A1E7A9E0D008E5254 /* InviteActionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InviteActionsView.swift; sourceTree = "<group>"; };
+		A497F26C1E7A9E1C008E5254 /* InviteActionsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InviteActionsView.xib; sourceTree = "<group>"; };
 		A4FB6A061E79DC9200164A9E /* FriendAnnotationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FriendAnnotationView.xib; sourceTree = "<group>"; };
 		A85BE16BB80298717C2A3125 /* Pods-Abstract-FroxiiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Abstract-FroxiiUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Abstract-FroxiiUITests/Pods-Abstract-FroxiiUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E1964474572B3A80626806C6 /* Pods_Abstract_FroxiiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Abstract_FroxiiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,10 +204,10 @@
 			children = (
 				A4822ED21E78583600103442 /* Map view */,
 				A4822ECD1E784AD500103442 /* Collection view cells */,
-				A4822ED31E78585A00103442 /* FriendSearchSegmentedControl.swift */,
-				A466AE8F1E79855D006E05A6 /* PopPresentationController.swift */,
+				A497F2691E7A9DEB008E5254 /* FriendSearchSegmentedControl */,
+				A497F26E1E7A9E20008E5254 /* InviteActionsView */,
 				A466AE911E798A37006E05A6 /* DismissAnimator.swift */,
-				A48B8FD61E79EF920049DB32 /* FriendSearchSegmentedControl.xib */,
+				A497F2671E7A9A81008E5254 /* FRScrollbar.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -252,6 +256,24 @@
 				A4FB6A061E79DC9200164A9E /* FriendAnnotationView.xib */,
 			);
 			name = "Map view";
+			sourceTree = "<group>";
+		};
+		A497F2691E7A9DEB008E5254 /* FriendSearchSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				A4822ED31E78585A00103442 /* FriendSearchSegmentedControl.swift */,
+				A48B8FD61E79EF920049DB32 /* FriendSearchSegmentedControl.xib */,
+			);
+			name = FriendSearchSegmentedControl;
+			sourceTree = "<group>";
+		};
+		A497F26E1E7A9E20008E5254 /* InviteActionsView */ = {
+			isa = PBXGroup;
+			children = (
+				A497F26A1E7A9E0D008E5254 /* InviteActionsView.swift */,
+				A497F26C1E7A9E1C008E5254 /* InviteActionsView.xib */,
+			);
+			name = InviteActionsView;
 			sourceTree = "<group>";
 		};
 		DACB6DFA0CD2BC22BB80E482 /* Frameworks */ = {
@@ -382,6 +404,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A4822ED11E78510200103442 /* jobs.jpg in Resources */,
+				A497F26D1E7A9E1C008E5254 /* InviteActionsView.xib in Resources */,
 				A409C0431E76E16A00E70CB5 /* LaunchScreen.storyboard in Resources */,
 				A409C0401E76E16A00E70CB5 /* Assets.xcassets in Resources */,
 				A409C03E1E76E16A00E70CB5 /* Main.storyboard in Resources */,
@@ -552,14 +575,15 @@
 			files = (
 				A4822ECA1E783F1D00103442 /* FRFriendsViewController.swift in Sources */,
 				A4822ECC1E78402900103442 /* FRContainerViewController.swift in Sources */,
+				A497F26B1E7A9E0D008E5254 /* InviteActionsView.swift in Sources */,
 				A409C06B1E76EB7B00E70CB5 /* FriendAnnotation.swift in Sources */,
 				A4822EC51E782FF200103442 /* Extensions.swift in Sources */,
 				A4839EAE1E79705A00BB41BC /* FRProfileViewController.swift in Sources */,
 				A409C03B1E76E16A00E70CB5 /* FRMapViewController.swift in Sources */,
 				A4822EC71E783AC700103442 /* FRMainViewController.swift in Sources */,
 				A4822EC21E782B7800103442 /* FriendAnnotationView.swift in Sources */,
+				A497F2681E7A9A81008E5254 /* FRScrollbar.swift in Sources */,
 				A48B8FD91E7A03CF0049DB32 /* FRInviteViewController.swift in Sources */,
-				A466AE901E79855D006E05A6 /* PopPresentationController.swift in Sources */,
 				A409C0691E76E3F500E70CB5 /* Friend.swift in Sources */,
 				A4822ED41E78585A00103442 /* FriendSearchSegmentedControl.swift in Sources */,
 				A409C0391E76E16A00E70CB5 /* AppDelegate.swift in Sources */,

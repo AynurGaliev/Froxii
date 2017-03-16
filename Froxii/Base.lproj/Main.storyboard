@@ -405,7 +405,7 @@
                         <barButtonItem key="rightBarButtonItem" image="add" id="N04-C6-liP">
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
-                                <segue destination="vfk-Fd-WRg" kind="show" id="tCs-fV-ldx"/>
+                                <segue destination="vfk-Fd-WRg" kind="show" identifier="ShowInvititation" id="tCs-fV-ldx"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -430,61 +430,46 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QbH-PA-een">
-                                <rect key="frame" x="0.0" y="108" width="375" height="515"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="QbH-PA-een">
+                                <rect key="frame" x="0.0" y="108" width="344" height="515"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FriendCell" id="f7p-zT-nuO">
+                                        <rect key="frame" x="0.0" y="28" width="344" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f7p-zT-nuO" id="WNU-cd-V6b">
+                                            <rect key="frame" x="0.0" y="0.0" width="344" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vfk-Fd-WRg" id="aFm-Ka-4ET"/>
+                                    <outlet property="delegate" destination="vfk-Fd-WRg" id="kqx-dT-RNa"/>
+                                </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MIK-bV-KJo">
-                                <rect key="frame" x="0.0" y="64" width="375" height="44"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjp-h5-H6f">
-                                        <rect key="frame" x="67.5" y="7" width="100" height="30"/>
-                                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="Xog-tR-WKm"/>
-                                        </constraints>
-                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="Invite All"/>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p24-vb-Zjb">
-                                        <rect key="frame" x="207.5" y="7" width="100" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="100" id="3DT-VT-LY1"/>
-                                        </constraints>
-                                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="Cancel"/>
-                                    </button>
-                                </subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="3iI-dk-qnC" customClass="FRScrollbar" customModule="Froxii" customModuleProvider="target">
+                                <rect key="frame" x="342" y="108" width="37" height="516"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="offsetChanged:" destination="vfk-Fd-WRg" eventType="valueChanged" id="oSb-vR-9xd"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1wm-x8-nF8" customClass="InviteActionsView" customModule="Froxii" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="64" width="375" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="Tjp-h5-H6f" firstAttribute="centerX" secondItem="MIK-bV-KJo" secondAttribute="centerX" constant="-70" id="1II-Xl-Zey"/>
-                                    <constraint firstItem="Tjp-h5-H6f" firstAttribute="centerY" secondItem="MIK-bV-KJo" secondAttribute="centerY" id="8DH-b7-HRG"/>
-                                    <constraint firstItem="p24-vb-Zjb" firstAttribute="centerY" secondItem="MIK-bV-KJo" secondAttribute="centerY" id="MBv-Dh-sPh"/>
-                                    <constraint firstAttribute="height" constant="44" id="ZXf-tc-1EO"/>
-                                    <constraint firstItem="p24-vb-Zjb" firstAttribute="centerX" secondItem="MIK-bV-KJo" secondAttribute="centerX" constant="70" id="giN-pL-qCg"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="QbH-PA-een" firstAttribute="leading" secondItem="6w3-D3-FZl" secondAttribute="leading" id="3DQ-Y1-UDO"/>
-                            <constraint firstItem="Zw7-Wv-ooB" firstAttribute="top" secondItem="QbH-PA-een" secondAttribute="bottom" id="3sl-Q8-1bv"/>
-                            <constraint firstAttribute="trailing" secondItem="QbH-PA-een" secondAttribute="trailing" id="N7r-dN-I1R"/>
-                            <constraint firstAttribute="trailing" secondItem="MIK-bV-KJo" secondAttribute="trailing" id="aqS-Hq-ZaN"/>
-                            <constraint firstItem="QbH-PA-een" firstAttribute="top" secondItem="MIK-bV-KJo" secondAttribute="bottom" id="fWE-pI-77i"/>
-                            <constraint firstItem="MIK-bV-KJo" firstAttribute="leading" secondItem="6w3-D3-FZl" secondAttribute="leading" id="na3-kg-KPQ"/>
-                            <constraint firstItem="MIK-bV-KJo" firstAttribute="top" secondItem="X6r-Nq-sVm" secondAttribute="bottom" id="yiO-u6-7Qa"/>
-                        </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="A5r-9g-sDM">
-                        <barButtonItem key="leftBarButtonItem" image="settings" id="azJ-wa-Exq">
-                            <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="backAction:" destination="vfk-Fd-WRg" id="AnI-mP-f3b"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <connections>
+                        <outlet property="actionsContainerView" destination="1wm-x8-nF8" id="5Jd-44-Ne7"/>
+                        <outlet property="scrollbar" destination="3iI-dk-qnC" id="o4F-FT-twy"/>
+                        <outlet property="tableView" destination="QbH-PA-een" id="f1X-Ie-3xG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R7p-h5-LZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
