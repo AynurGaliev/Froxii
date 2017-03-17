@@ -1,8 +1,13 @@
 PODS:
+  - Crashlytics (3.8.4):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.11)
   - FSHelpers+Swift (2.2)
   - KRDeviceInfo (1.1)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - FSHelpers+Swift (from `https://github.com/fs/FSHelper.git`, branch `master`)
   - KRDeviceInfo (from `https://github.com/NikolaevSergey/KRDeviceInfo.git`, branch `master`)
 
@@ -23,9 +28,11 @@ CHECKOUT OPTIONS:
     :git: https://github.com/NikolaevSergey/KRDeviceInfo.git
 
 SPEC CHECKSUMS:
+  Crashlytics: 79e236942ca1e7fc641df1feb9a275360a78ab6a
+  Fabric: 5911403591946b8228ab1c51d98f1d7137e863c6
   FSHelpers+Swift: df9494a1d09ac433dcb3a88dcec6546a7a09c17b
   KRDeviceInfo: b59890711e9d8d4768e33c66425ae413ef40bd05
 
-PODFILE CHECKSUM: 01335eea728fed33f2f4c0339a9ffd3700bb8d36
+PODFILE CHECKSUM: efe3ea8d1d18920cee10ed48f9e5305a02bdfe76
 
 COCOAPODS: 1.2.0

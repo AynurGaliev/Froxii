@@ -8,6 +8,9 @@ abstract_target 'Abstract' do
     pod 'FSHelpers+Swift', :git => 'https://github.com/fs/FSHelper.git', :branch => 'master'
     pod 'KRDeviceInfo', :git => 'https://github.com/NikolaevSergey/KRDeviceInfo.git', :branch => 'master'
    
+    pod 'Fabric'
+    pod 'Crashlytics'
+   
     #TARGETS
     target 'Froxii' do
     end

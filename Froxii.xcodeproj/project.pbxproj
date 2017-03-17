@@ -299,6 +299,7 @@
 				A409C0331E76E16A00E70CB5 /* Resources */,
 				7881B8ABB4CCE0DC63932753 /* [CP] Embed Pods Frameworks */,
 				A296E220B8F666F5B26866C8 /* [CP] Copy Pods Resources */,
+				A4CFD69B1E7C2DAC00B6E677 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -363,8 +364,8 @@
 				TargetAttributes = {
 					A409C0341E76E16A00E70CB5 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 3EZN9G7JS8;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = GA8GUNS4V3;
+						ProvisioningStyle = Manual;
 					};
 					A409C0481E76E16A00E70CB5 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -535,6 +536,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Abstract-Froxii/Pods-Abstract-Froxii-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A4CFD69B1E7C2DAC00B6E677 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" a58319df29eb3929f0ed864166f3c42deb476e66 3b5009c215f001848f3030458e2bbb292e68c6b82a2a092424a1caf7a1ee6225";
 		};
 		A9B166FE24D8D1FBC1AA8588 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -741,8 +755,9 @@
 			baseConfigurationReference = 0B545422EAD9E90A2BFE6EF8 /* Pods-Abstract-Froxii.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3EZN9G7JS8;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Christopher Schultz (Q5NM9YSVCD)";
+				DEVELOPMENT_TEAM = GA8GUNS4V3;
 				INFOPLIST_FILE = Froxii/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -758,8 +773,9 @@
 			baseConfigurationReference = 8F5DB9208F37AE8745E7C4A3 /* Pods-Abstract-Froxii.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = 3EZN9G7JS8;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: FLATSTACK, LLC (Y49MTY8CU2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: FLATSTACK, LLC (Y49MTY8CU2)";
+				DEVELOPMENT_TEAM = GA8GUNS4V3;
 				INFOPLIST_FILE = Froxii/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
